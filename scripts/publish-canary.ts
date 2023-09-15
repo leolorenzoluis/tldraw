@@ -33,7 +33,6 @@ async function main() {
 	// } else {
 	// 	throw new Error('Invalid bump type provided')
 	// }
-
 	setCanaryVersions('major')
 	publish()
 }
