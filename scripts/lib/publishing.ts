@@ -130,7 +130,7 @@ export async function publish() {
 			stdio: 'inherit',
 			cwd: packageDetails.dir,
 		})
-		let waitAttempts = 10
+		let waitAttempts = 3
 
 		loop: while (waitAttempts > 0) {
 			try {
