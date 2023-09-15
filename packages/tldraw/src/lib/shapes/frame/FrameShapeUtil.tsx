@@ -15,7 +15,7 @@ import {
 	getDefaultColorTheme,
 	last,
 	toDomPrecision,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { useDefaultColorTheme } from '../shared/ShapeFill'
 import { createTextSvgElementFromSpans } from '../shared/createTextSvgElementFromSpans'
 import { FrameHeading } from './components/FrameHeading'

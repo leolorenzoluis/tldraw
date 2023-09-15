@@ -1,4 +1,4 @@
-import { average, precise } from '@tldraw/editor'
+import { average, precise } from '@abc.xyz/editor'
 import { StrokePoint } from './types'
 
 /**

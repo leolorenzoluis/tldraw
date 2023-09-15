@@ -4,7 +4,7 @@ import {
 	Editor,
 	TLDefaultHorizontalAlignStyle,
 	TLDefaultVerticalAlignStyle,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 
 function correctSpacesToNbsp(input: string) {
 	return input.replace(/\s/g, '\xa0')

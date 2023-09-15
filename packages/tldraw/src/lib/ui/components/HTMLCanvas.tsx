@@ -1,4 +1,4 @@
-import { track, useEditor } from '@tldraw/editor'
+import { track, useEditor } from '@abc.xyz/editor'
 import * as React from 'react'
 
 /** @internal */

@@ -1,4 +1,4 @@
-import { Editor } from '@tldraw/editor'
+import { Editor } from '@abc.xyz/editor'
 
 export function registerDefaultSideEffects(editor: Editor) {
 	return editor.sideEffects.registerAfterChangeHandler('instance_page_state', (prev, next) => {

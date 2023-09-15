@@ -1,4 +1,4 @@
-import { SerializedStore } from '@tldraw/store'
+import { SerializedStore } from '@abc.xyz/store'
 import { Vec2dModel } from './misc/geometry-types'
 import { TLRecord } from './records/TLRecord'
 

@@ -1,4 +1,4 @@
-import { JsonValue, exhaustiveSwitchError, getOwnProperty, hasOwnProperty } from '@tldraw/utils'
+import { JsonValue, exhaustiveSwitchError, getOwnProperty, hasOwnProperty } from '@abc.xyz/utils'
 
 /** @public */
 export type ValidatorFn<T> = (value: unknown) => T

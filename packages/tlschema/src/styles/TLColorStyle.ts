@@ -1,5 +1,5 @@
-import { Expand } from '@tldraw/utils'
-import { T } from '@tldraw/validate'
+import { Expand } from '@abc.xyz/utils'
+import { T } from '@abc.xyz/validate'
 import { StyleProp } from './StyleProp'
 
 const colors = [

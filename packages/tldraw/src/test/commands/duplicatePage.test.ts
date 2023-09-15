@@ -1,4 +1,4 @@
-import { MAX_PAGES, createShapeId } from '@tldraw/editor'
+import { MAX_PAGES, createShapeId } from '@abc.xyz/editor'
 import { TestEditor } from '../TestEditor'
 
 let editor: TestEditor

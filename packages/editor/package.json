@@ -1,11 +1,11 @@
 {
-	"name": "@tldraw/editor",
+	"name": "@abc.xyz/editor",
 	"description": "A tiny little drawing app (editor).",
-	"version": "2.0.0-alpha.14",
+	"version": "2.0.0-canary.11937fba5c68",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@abc.xyz.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
@@ -45,11 +45,11 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/state": "workspace:*",
-		"@tldraw/store": "workspace:*",
-		"@tldraw/tlschema": "workspace:*",
-		"@tldraw/utils": "workspace:*",
-		"@tldraw/validate": "workspace:*",
+		"@abc.xyz/state": "workspace:*",
+		"@abc.xyz/store": "workspace:*",
+		"@abc.xyz/tlschema": "workspace:*",
+		"@abc.xyz/utils": "workspace:*",
+		"@abc.xyz/validate": "workspace:*",
 		"@types/core-js": "^2.5.5",
 		"@use-gesture/react": "^10.2.27",
 		"classnames": "^2.3.2",

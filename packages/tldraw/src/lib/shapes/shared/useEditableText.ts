@@ -8,7 +8,7 @@ import {
 	stopEventPropagation,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import React, { useCallback, useEffect, useRef } from 'react'
 import { INDENT, TextHelpers } from './TextHelpers'
 

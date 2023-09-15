@@ -1,4 +1,4 @@
-import { Editor, VecLike } from '@tldraw/editor'
+import { Editor, VecLike } from '@abc.xyz/editor'
 import { pasteFiles } from './pasteFiles'
 
 /**

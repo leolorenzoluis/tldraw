@@ -8,8 +8,8 @@ import {
 	getHashForString,
 	isGifAnimated,
 	uniqueId,
-} from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+} from '@abc.xyz/tldraw'
+import '@abc.xyz/tldraw/tldraw.css'
 import { useCallback } from 'react'
 
 const UPLOAD_URL = '/SOME_ENDPOINT'

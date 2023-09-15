@@ -14,7 +14,7 @@ import {
 	TldrawEditorProps,
 	assert,
 	useEditor,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { useCallback, useDebugValue, useLayoutEffect, useMemo, useRef } from 'react'
 import { TldrawHandles } from './canvas/TldrawHandles'
 import { TldrawHoveredShapeIndicator } from './canvas/TldrawHoveredShapeIndicator'

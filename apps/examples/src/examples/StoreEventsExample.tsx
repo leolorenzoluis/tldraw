@@ -1,5 +1,5 @@
-import { Editor, TLEventMapHandler, Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Editor, TLEventMapHandler, Tldraw } from '@abc.xyz/tldraw'
+import '@abc.xyz/tldraw/tldraw.css'
 import { useCallback, useEffect, useState } from 'react'
 
 export default function StoreEventsExample() {

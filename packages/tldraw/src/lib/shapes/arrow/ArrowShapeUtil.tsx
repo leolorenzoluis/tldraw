@@ -34,7 +34,7 @@ import {
 	getSolidStraightArrowPath,
 	getStraightArrowHandlePath,
 	toDomPrecision,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import React from 'react'
 import { ShapeFill, getShapeFillSvg, useDefaultColorTheme } from '../shared/ShapeFill'
 import { createTextSvgElementFromSpans } from '../shared/createTextSvgElementFromSpans'

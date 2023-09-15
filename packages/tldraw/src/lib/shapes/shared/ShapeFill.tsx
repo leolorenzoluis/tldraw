@@ -7,7 +7,7 @@ import {
 	useEditor,
 	useIsDarkMode,
 	useValue,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import React from 'react'
 
 export interface ShapeFillProps {

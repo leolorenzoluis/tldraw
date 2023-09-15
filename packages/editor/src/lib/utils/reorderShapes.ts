@@ -1,5 +1,5 @@
-import { TLParentId, TLShape, TLShapeId, TLShapePartial } from '@tldraw/tlschema'
-import { compact } from '@tldraw/utils'
+import { TLParentId, TLShape, TLShapeId, TLShapePartial } from '@abc.xyz/tlschema'
+import { compact } from '@abc.xyz/utils'
 import { Editor } from '../editor/Editor'
 import { getIndicesBetween, sortByIndex } from './reordering/reordering'
 

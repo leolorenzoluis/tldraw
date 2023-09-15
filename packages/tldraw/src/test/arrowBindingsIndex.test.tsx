@@ -1,4 +1,4 @@
-import { TLArrowShape, TLGeoShape, TLShapeId } from '@tldraw/editor'
+import { TLArrowShape, TLGeoShape, TLShapeId } from '@abc.xyz/editor'
 import { TestEditor } from './TestEditor'
 import { TL } from './test-jsx'
 

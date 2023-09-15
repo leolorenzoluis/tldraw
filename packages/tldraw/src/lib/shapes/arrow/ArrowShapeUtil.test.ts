@@ -5,7 +5,7 @@ import {
 	TLArrowShape,
 	TLArrowShapeTerminal,
 	TLShapeId,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { TestEditor } from '../../../test/TestEditor'
 
 let editor: TestEditor

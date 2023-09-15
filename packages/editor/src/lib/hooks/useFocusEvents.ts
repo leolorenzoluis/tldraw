@@ -1,4 +1,4 @@
-import { debounce } from '@tldraw/utils'
+import { debounce } from '@abc.xyz/utils'
 import { useLayoutEffect } from 'react'
 import { useContainer } from './useContainer'
 import { useEditor } from './useEditor'

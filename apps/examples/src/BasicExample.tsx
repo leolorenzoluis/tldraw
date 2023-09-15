@@ -1,5 +1,5 @@
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw } from '@abc.xyz/tldraw'
+import '@abc.xyz/tldraw/tldraw.css'
 
 export default function BasicExample() {
 	return (

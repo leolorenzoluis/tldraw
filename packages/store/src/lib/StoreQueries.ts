@@ -6,8 +6,8 @@ import {
 	isUninitialized,
 	RESET_VALUE,
 	withDiff,
-} from '@tldraw/state'
-import { objectMapValues } from '@tldraw/utils'
+} from '@abc.xyz/state'
+import { objectMapValues } from '@abc.xyz/utils'
 import isEqual from 'lodash.isequal'
 import { IdOf, UnknownRecord } from './BaseRecord'
 import { executeQuery, objectMatchesQuery, QueryExpression } from './executeQuery'

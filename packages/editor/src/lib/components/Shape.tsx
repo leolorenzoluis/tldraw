@@ -1,5 +1,5 @@
-import { track, useQuickReactor, useStateTracking } from '@tldraw/state'
-import { TLShape, TLShapeId } from '@tldraw/tlschema'
+import { track, useQuickReactor, useStateTracking } from '@abc.xyz/state'
+import { TLShape, TLShapeId } from '@abc.xyz/tlschema'
 import * as React from 'react'
 import { ShapeUtil } from '../editor/shapes/ShapeUtil'
 import { useEditor } from '../hooks/useEditor'

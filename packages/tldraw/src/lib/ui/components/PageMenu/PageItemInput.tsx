@@ -1,4 +1,4 @@
-import { TLPageId, useEditor } from '@tldraw/editor'
+import { TLPageId, useEditor } from '@abc.xyz/editor'
 import { useCallback, useRef } from 'react'
 import { Input } from '../primitives/Input'
 

@@ -1,4 +1,4 @@
-import { TLFrameShape, TLGeoShape, approximately, createShapeId } from '@tldraw/editor'
+import { TLFrameShape, TLGeoShape, approximately, createShapeId } from '@abc.xyz/editor'
 import { TestEditor } from './TestEditor'
 
 let editor: TestEditor
@@ -142,28 +142,28 @@ it('Gets pasted shapes correctly', () => {
 describe('When pasting', () => {
 	it('pastes shapes onto the page', () => {
 		/*
-    Before:
-    page
-      - frame1
-      - frame2
-      - frame3
-      - frame4
-      - box1
-      - box2
-      - box3
+	Before:
+	page
+	  - frame1
+	  - frame2
+	  - frame3
+	  - frame4
+	  - box1
+	  - box2
+	  - box3
 
-    After:
-    page
-      - frame1
-      - frame2
-      - frame3
-      - frame4
-      - box1
-      - box2
-      - box3
-      - box1copy
-      - box2copy
-    */
+	After:
+	page
+	  - frame1
+	  - frame2
+	  - frame3
+	  - frame4
+	  - box1
+	  - box2
+	  - box3
+	  - box1copy
+	  - box2copy
+	*/
 
 		editor.select(ids.box1, ids.box2)
 		editor.copy()
@@ -189,28 +189,28 @@ describe('When pasting', () => {
 
 	it('pastes shapes as children of the selected shape when shape is a frame', () => {
 		/*
-    Before:
-    page
-      - frame1 *
-      - frame2
-      - frame3
-      - frame4
-      - box1
-      - box2
-      - box3
+	Before:
+	page
+	  - frame1 *
+	  - frame2
+	  - frame3
+	  - frame4
+	  - box1
+	  - box2
+	  - box3
 
-    After:
-    page
-      - frame1
-        - box1copy *
-        - box2copy *
-      - frame2
-      - frame3
-      - frame4
-      - box1
-      - box2
-      - box3
-    */
+	After:
+	page
+	  - frame1
+		- box1copy *
+		- box2copy *
+	  - frame2
+	  - frame3
+	  - frame4
+	  - box1
+	  - box2
+	  - box3
+	*/
 		editor.select(ids.box1, ids.box2)
 		editor.copy()
 		editor.select(ids.frame1)
@@ -235,28 +235,28 @@ describe('When pasting', () => {
 		editor.reparentShapes([ids.box1], ids.frame3)
 		editor.reparentShapes([ids.box2], ids.frame4)
 		/*
-    Before:
-    page
-      - frame1 
-        - frame3
-          - box1 *
-      - frame2 
-        - frame4
-          - box2 *
-      - box3
+	Before:
+	page
+	  - frame1 
+		- frame3
+		  - box1 *
+	  - frame2 
+		- frame4
+		  - box2 *
+	  - box3
 
-    After:
-    page
-      - frame1 
-        - frame3
-          - box1  
-      - frame2 
-        - frame4
-          - box2
-      - box3
-      - box1copy *
-      - box2copy *
-    */
+	After:
+	page
+	  - frame1 
+		- frame3
+		  - box1  
+	  - frame2 
+		- frame4
+		  - box2
+	  - box3
+	  - box1copy *
+	  - box2copy *
+	*/
 
 		editor.select(ids.box1, ids.box2)
 		editor.copy()
@@ -281,29 +281,29 @@ describe('When pasting', () => {
 		editor.reparentShapes([ids.box1], ids.frame3)
 		editor.reparentShapes([ids.box2], ids.frame4)
 		/*
-    Before:
-    page
-      - frame1 
-        - frame3
-          - box1 *
-        - frame4
-          - box2 *
-      - frame2 
-      - box3
+	Before:
+	page
+	  - frame1 
+		- frame3
+		  - box1 *
+		- frame4
+		  - box2 *
+	  - frame2 
+	  - box3
 
-    After:
-    page
-      - frame1 
-        - frame3
-          - box1  
-        - frame4
-          - box2 
-        - box1copy *
-        - box2copy *
-      - frame2 
-      - box2
-      - box3
-    */
+	After:
+	page
+	  - frame1 
+		- frame3
+		  - box1  
+		- frame4
+		  - box2 
+		- box1copy *
+		- box2copy *
+	  - frame2 
+	  - box2
+	  - box3
+	*/
 
 		editor.select(ids.box1, ids.box2)
 		editor.copy()
@@ -326,26 +326,26 @@ it('pastes shapes with children', () => {
 	/*
   Before:
   page
-    - frame1 
-    - frame2 
-    - frame3 *
-      - box1 
-      - box2 
-    - frame4
-    - box3
+	- frame1 
+	- frame2 
+	- frame3 *
+	  - box1 
+	  - box2 
+	- frame4
+	- box3
 
   After:
   page
-    - frame1 
-    - frame2 
-    - frame3
-      - box1
-      - box2
-    - frame4
-    - box3
-    - frame3copy
-      - box1copy
-      - box2copy
+	- frame1 
+	- frame2 
+	- frame3
+	  - box1
+	  - box2
+	- frame4
+	- box3
+	- frame3copy
+	  - box1copy
+	  - box2copy
   */
 
 	editor.select(ids.frame3)

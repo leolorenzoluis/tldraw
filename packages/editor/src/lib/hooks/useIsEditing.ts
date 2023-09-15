@@ -1,5 +1,5 @@
-import { useValue } from '@tldraw/state'
-import { TLShapeId } from '@tldraw/tlschema'
+import { useValue } from '@abc.xyz/state'
+import { TLShapeId } from '@abc.xyz/tlschema'
 import { useEditor } from './useEditor'
 
 /** @public */

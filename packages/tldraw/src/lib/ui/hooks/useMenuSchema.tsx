@@ -1,4 +1,11 @@
-import { Editor, TLBookmarkShape, TLEmbedShape, compact, useEditor, useValue } from '@tldraw/editor'
+import {
+	Editor,
+	TLBookmarkShape,
+	TLEmbedShape,
+	compact,
+	useEditor,
+	useValue,
+} from '@abc.xyz/editor'
 import React, { useMemo } from 'react'
 import { getEmbedInfo } from '../../utils/embeds'
 import {

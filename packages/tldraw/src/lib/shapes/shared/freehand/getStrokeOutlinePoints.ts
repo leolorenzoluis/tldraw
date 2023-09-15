@@ -1,4 +1,4 @@
-import { Vec2d } from '@tldraw/editor'
+import { Vec2d } from '@abc.xyz/editor'
 import type { StrokeOptions, StrokePoint } from './types'
 
 const { PI } = Math
@@ -72,10 +72,10 @@ export function getStrokeOutlinePoints(
 	let isPrevPointSharpCorner = false
 
 	/*
-    Find the outline's left and right points
+	Find the outline's left and right points
 
-    Iterating through the points and populate the rightPts and leftPts arrays,
-    skipping the first and last pointsm, which will get caps later on.
+	Iterating through the points and populate the rightPts and leftPts arrays,
+	skipping the first and last pointsm, which will get caps later on.
   */
 
 	let strokePoint: StrokePoint
@@ -85,12 +85,12 @@ export function getStrokeOutlinePoints(
 		const { point, vector } = strokePoints[i]
 
 		/*
-      Handle sharp corners
+	  Handle sharp corners
 
-      Find the difference (dot product) between the current and next vector.
-      If the next vector is at more than a right angle to the current vector,
-      draw a cap at the current point.
-    */
+	  Find the difference (dot product) between the current and next vector.
+	  If the next vector is at more than a right angle to the current vector,
+	  draw a cap at the current point.
+	*/
 
 		const prevDpr = strokePoint.vector.dpr(prevVector)
 		const nextVector = (i < strokePoints.length - 1 ? strokePoints[i + 1] : strokePoints[i]).vector
@@ -154,14 +154,14 @@ export function getStrokeOutlinePoints(
 		}
 
 		/* 
-      Add regular points
+	  Add regular points
 
-      Project points to either side of the current point, using the
-      calculated size as a distance. If a point's distance to the 
-      previous point on that side greater than the minimum distance
-      (or if the corner is kinda sharp), add the points to the side's
-      points array.
-    */
+	  Project points to either side of the current point, using the
+	  calculated size as a distance. If a point's distance to the 
+	  previous point on that side greater than the minimum distance
+	  (or if the corner is kinda sharp), add the points to the side's
+	  points array.
+	*/
 
 		const offset = Vec2d.Lrp(nextVector, vector, nextDpr).per().mul(strokePoint.radius)
 
@@ -186,11 +186,11 @@ export function getStrokeOutlinePoints(
 	}
 
 	/*
-    Drawing caps
+	Drawing caps
     
-    Now that we have our points on either side of the line, we need to
-    draw caps at the start and end. Tapered lines don't have caps, but
-    may have dots for very short lines.
+	Now that we have our points on either side of the line, we need to
+	draw caps at the start and end. Tapered lines don't have caps, but
+	may have dots for very short lines.
   */
 
 	const firstPoint = firstStrokePoint.point
@@ -201,12 +201,12 @@ export function getStrokeOutlinePoints(
 			: Vec2d.AddXY(firstStrokePoint.point, 1, 1)
 
 	/* 
-    Draw a dot for very short or completed strokes
+	Draw a dot for very short or completed strokes
     
-    If the line is too short to gather left or right points and if the line is
-    not tapered on either side, draw a dot. If the line is tapered, then only
-    draw a dot if the line is both very short and complete. If we draw a dot,
-    we can just return those points.
+	If the line is too short to gather left or right points and if the line is
+	not tapered on either side, draw a dot. If the line is tapered, then only
+	draw a dot if the line is both very short and complete. If we draw a dot,
+	we can just return those points.
   */
 
 	if (strokePoints.length === 1) {
@@ -224,12 +224,12 @@ export function getStrokeOutlinePoints(
 	}
 
 	/*
-    Draw a start cap
+	Draw a start cap
 
-    Unless the line has a tapered start, or unless the line has a tapered end
-    and the line is very short, draw a start cap around the first point. Use
-    the distance between the second left and right point for the cap's radius.
-    Finally remove the first left and right points. :psyduck:
+	Unless the line has a tapered start, or unless the line has a tapered end
+	and the line is very short, draw a start cap around the first point. Use
+	the distance between the second left and right point for the cap's radius.
+	Finally remove the first left and right points. :psyduck:
   */
 
 	const startCap: Vec2d[] = []
@@ -256,13 +256,13 @@ export function getStrokeOutlinePoints(
 	}
 
 	/*
-    Draw an end cap
+	Draw an end cap
 
-    If the line does not have a tapered end, and unless the line has a tapered
-    start and the line is very short, draw a cap around the last point. Finally,
-    remove the last left and right points. Otherwise, add the last point. Note
-    that This cap is a full-turn-and-a-half: this prevents incorrect caps on
-    sharp end turns.
+	If the line does not have a tapered end, and unless the line has a tapered
+	start and the line is very short, draw a cap around the last point. Finally,
+	remove the last left and right points. Otherwise, add the last point. Note
+	that This cap is a full-turn-and-a-half: this prevents incorrect caps on
+	sharp end turns.
   */
 
 	const endCap: Vec2d[] = []
@@ -288,9 +288,9 @@ export function getStrokeOutlinePoints(
 	}
 
 	/*
-    Return the points in the correct winding order: begin on the left side, then 
-    continue around the end cap, then come back along the right side, and finally 
-    complete the start cap.
+	Return the points in the correct winding order: begin on the left side, then 
+	continue around the end cap, then come back along the right side, and finally 
+	complete the start cap.
   */
 
 	return leftPts.concat(endCap, rightPts.reverse(), startCap)

@@ -1,4 +1,4 @@
-import { EmbedDefinition } from '@tldraw/tlschema'
+import { EmbedDefinition } from '@abc.xyz/tlschema'
 import { VecLike } from '../../primitives/Vec2d'
 
 /** @public */

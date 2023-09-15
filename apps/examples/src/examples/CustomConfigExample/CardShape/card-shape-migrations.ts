@@ -1,4 +1,4 @@
-import { defineMigrations } from '@tldraw/tldraw'
+import { defineMigrations } from '@abc.xyz/tldraw'
 
 // Migrations for the custom card shape (optional but very helpful)
 export const cardShapeMigrations = defineMigrations({

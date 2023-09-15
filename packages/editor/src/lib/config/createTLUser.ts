@@ -1,5 +1,5 @@
-import { Signal, computed } from '@tldraw/state'
-import { TLInstancePresence, TLStore } from '@tldraw/tlschema'
+import { Signal, computed } from '@abc.xyz/state'
+import { TLInstancePresence, TLStore } from '@abc.xyz/tlschema'
 import { TLUserPreferences, getUserPreferences, setUserPreferences } from './TLUserPreferences'
 
 /** @public */

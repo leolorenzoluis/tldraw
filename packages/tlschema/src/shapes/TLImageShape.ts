@@ -1,5 +1,5 @@
-import { defineMigrations } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import { defineMigrations } from '@abc.xyz/store'
+import { T } from '@abc.xyz/validate'
 import { assetIdValidator } from '../assets/TLBaseAsset'
 import { vec2dModelValidator } from '../misc/geometry-types'
 import { ShapePropsType, TLBaseShape } from './TLBaseShape'

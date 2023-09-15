@@ -5,7 +5,7 @@ import {
 	SharedStyle,
 	TLGeoShape,
 	TLGroupShape,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { TestEditor, createDefaultShapes, defaultShapesIds } from './TestEditor'
 import { TL } from './test-jsx'
 

@@ -1,5 +1,4 @@
 import { exec } from './lib/exec'
-import { nicelog } from './lib/nicelog'
 import { getLatestVersion, publish, setAllVersions } from './lib/publishing'
 
 async function main() {
@@ -18,22 +17,25 @@ async function main() {
 	}
 
 	// module was called directly
-	const bumpType = (await exec('npx', ['auto', 'version'])).trim() as
-		| 'major'
-		| 'minor'
-		| 'patch'
-		| ''
+	// const bumpType = (await exec('npx', ['auto', 'version'])).trim() as
+	// 	| 'major'
+	// 	| 'minor'
+	// 	| 'patch'
+	// 	| ''
 
-	nicelog('bumpType', bumpType)
-	if (bumpType === '') {
-		nicelog('nothing to do')
-	} else if (['major', 'minor', 'patch'].includes(bumpType)) {
-		nicelog('setting canary versions')
-		setCanaryVersions(bumpType)
-		publish()
-	} else {
-		throw new Error('Invalid bump type provided')
-	}
+	// nicelog('bumpType', bumpType)
+	// if (bumpType === '') {
+	// 	nicelog('nothing to do')
+	// } else if (['major', 'minor', 'patch'].includes(bumpType)) {
+	// 	nicelog('setting canary versions')
+	// 	setCanaryVersions(bumpType)
+	// 	publish()
+	// } else {
+	// 	throw new Error('Invalid bump type provided')
+	// }
+
+	setCanaryVersions('minor')
+	publish()
 }
 
 main()

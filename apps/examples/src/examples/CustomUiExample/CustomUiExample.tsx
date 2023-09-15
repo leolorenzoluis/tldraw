@@ -1,5 +1,5 @@
-import { Canvas, Tldraw, track, useEditor } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Canvas, Tldraw, track, useEditor } from '@abc.xyz/tldraw'
+import '@abc.xyz/tldraw/tldraw.css'
 import { useEffect } from 'react'
 import './custom-ui.css'
 

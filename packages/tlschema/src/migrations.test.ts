@@ -1,4 +1,4 @@
-import { Migrations, Store, createRecordType } from '@tldraw/store'
+import { Migrations, Store, createRecordType } from '@abc.xyz/store'
 import fs from 'fs'
 import { imageAssetMigrations } from './assets/TLImageAsset'
 import { videoAssetMigrations } from './assets/TLVideoAsset'

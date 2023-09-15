@@ -1,11 +1,11 @@
 {
-	"name": "@tldraw/monorepo",
+	"name": "@abc.xyz/monorepo",
 	"description": "A tiny little drawing app (monorepo).",
 	"version": "0.0.0",
 	"private": true,
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@abc.xyz.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"repository": {
@@ -97,5 +97,11 @@
 	},
 	"dependencies": {
 		"svgo": "^3.0.2"
+	},
+	"auto": {
+		"plugins": [
+			"npm"
+		],
+		"onlyPublishWithReleaseLabel": true
 	}
 }

@@ -27,7 +27,7 @@ function getPackageDetails(dir: string): PackageDetails | null {
 		dir,
 		version: packageJson.version,
 		localDeps: Object.keys(packageJson.dependencies ?? {}).filter((dep) =>
-			dep.startsWith('@tldraw')
+			dep.startsWith('@abc.xyz')
 		),
 	}
 }
@@ -50,11 +50,11 @@ export function setAllVersions(version: string) {
 			path.join(packageDetails.dir, 'package.json'),
 			JSON.stringify(manifest, null, '\t') + '\n'
 		)
-		if (manifest.name === '@tldraw/editor') {
+		if (manifest.name === '@abc.xyz/editor') {
 			const versionFileContents = `export const version = '${version}'\n`
 			writeFileSync(path.join(packageDetails.dir, 'src', 'version.ts'), versionFileContents)
 		}
-		if (manifest.name === '@tldraw/tldraw') {
+		if (manifest.name === '@abc.xyz/tldraw') {
 			const versionFileContents = `export const version = '${version}'\n`
 			writeFileSync(
 				path.join(packageDetails.dir, 'src', 'lib', 'ui', 'version.ts'),
@@ -136,9 +136,9 @@ export async function publish() {
 			try {
 				// fetch the new package directly from the npm registry
 				const newVersion = packageDetails.version
-				const unscopedName = packageDetails.name.replace('@tldraw/', '')
+				const unscopedName = packageDetails.name.replace('@abc-xyz/', '')
 
-				const url = `https://registry.npmjs.org/@tldraw/${unscopedName}/-/${unscopedName}-${newVersion}.tgz`
+				const url = `https://registry.npmjs.org/@abc-xyz/${unscopedName}/-/${unscopedName}-${newVersion}.tgz`
 				nicelog('looking for package at url: ', url)
 				const res = await fetch(url, {
 					method: 'HEAD',

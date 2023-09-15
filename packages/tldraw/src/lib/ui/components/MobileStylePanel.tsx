@@ -1,4 +1,4 @@
-import { DefaultColorStyle, getDefaultColorTheme, useEditor, useValue } from '@tldraw/editor'
+import { DefaultColorStyle, getDefaultColorTheme, useEditor, useValue } from '@abc.xyz/editor'
 import { useCallback } from 'react'
 import { useTranslation } from '../hooks/useTranslation/useTranslation'
 import { StylePanel } from './StylePanel/StylePanel'

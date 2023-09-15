@@ -1,4 +1,4 @@
-import { assert } from '@tldraw/utils'
+import { assert } from '@abc.xyz/utils'
 import { BaseRecord, RecordId } from '../BaseRecord'
 import { createRecordType } from '../RecordType'
 import { SerializedStore } from '../Store'

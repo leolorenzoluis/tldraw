@@ -1,4 +1,4 @@
-import { StateNode, TLEventHandlers, TLScribble } from '@tldraw/editor'
+import { StateNode, TLEventHandlers, TLScribble } from '@abc.xyz/editor'
 import { ScribbleManager } from '../../../shapes/shared/ScribbleManager'
 
 export class Lasering extends StateNode {

@@ -1,4 +1,4 @@
-import { createShapeId, PageRecordType } from '@tldraw/editor'
+import { createShapeId, PageRecordType } from '@abc.xyz/editor'
 import { TestEditor } from './TestEditor'
 
 let editor = {} as TestEditor

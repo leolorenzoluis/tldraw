@@ -1,5 +1,5 @@
-import { defineMigrations } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import { defineMigrations } from '@abc.xyz/store'
+import { T } from '@abc.xyz/validate'
 import { DefaultColorStyle } from '../styles/TLColorStyle'
 import { DefaultFontStyle } from '../styles/TLFontStyle'
 import { DefaultHorizontalAlignStyle } from '../styles/TLHorizontalAlignStyle'

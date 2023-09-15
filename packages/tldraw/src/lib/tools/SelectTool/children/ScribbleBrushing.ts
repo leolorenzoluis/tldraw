@@ -11,7 +11,7 @@ import {
 	Vec2d,
 	intersectLineSegmentPolyline,
 	pointInPolygon,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { ScribbleManager } from '../../../shapes/shared/ScribbleManager'
 
 export class ScribbleBrushing extends StateNode {

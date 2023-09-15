@@ -1,4 +1,4 @@
-import { DefaultColorStyle, TLArrowShape, TLGeoShape, createShapeId } from '@tldraw/editor'
+import { DefaultColorStyle, TLArrowShape, TLGeoShape, createShapeId } from '@abc.xyz/editor'
 import { TestEditor } from '../TestEditor'
 
 let editor: TestEditor

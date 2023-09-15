@@ -9,7 +9,7 @@ import {
 	getSvgPathFromPoints,
 	perimeterOfEllipse,
 	rng,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 
 import * as React from 'react'
 import {

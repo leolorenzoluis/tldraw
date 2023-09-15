@@ -1,4 +1,4 @@
-import { useValue } from '@tldraw/state'
+import { useValue } from '@abc.xyz/state'
 import { useEditor } from './useEditor'
 
 /** @public */

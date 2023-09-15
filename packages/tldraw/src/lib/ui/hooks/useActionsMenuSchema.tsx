@@ -1,4 +1,4 @@
-import { Editor, track, useEditor } from '@tldraw/editor'
+import { Editor, track, useEditor } from '@abc.xyz/editor'
 import React, { useMemo } from 'react'
 import {
 	TLUiMenuSchema,

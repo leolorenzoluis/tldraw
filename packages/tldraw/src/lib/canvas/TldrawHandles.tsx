@@ -1,4 +1,4 @@
-import { TLHandlesComponent, useEditor, useValue } from '@tldraw/editor'
+import { TLHandlesComponent, useEditor, useValue } from '@abc.xyz/editor'
 
 export const TldrawHandles: TLHandlesComponent = ({ children }) => {
 	const editor = useEditor()

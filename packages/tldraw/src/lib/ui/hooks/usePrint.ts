@@ -1,4 +1,4 @@
-import { uniqueId, useEditor } from '@tldraw/editor'
+import { uniqueId, useEditor } from '@abc.xyz/editor'
 import { useCallback, useRef } from 'react'
 
 /** @internal */

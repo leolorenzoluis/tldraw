@@ -4,7 +4,7 @@ import {
 	extractSessionStateFromLegacySnapshot,
 	loadSessionStateSnapshotIntoStore,
 	react,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { TestEditor } from './TestEditor'
 
 let editor: TestEditor

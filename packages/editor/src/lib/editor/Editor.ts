@@ -1,5 +1,5 @@
-import { EMPTY_ARRAY, atom, computed, transact } from '@tldraw/state'
-import { ComputedCache, RecordType } from '@tldraw/store'
+import { EMPTY_ARRAY, atom, computed, transact } from '@abc.xyz/state'
+import { ComputedCache, RecordType } from '@abc.xyz/store'
 import {
 	CameraRecordType,
 	EmbedDefinition,
@@ -38,7 +38,7 @@ import {
 	isPageId,
 	isShape,
 	isShapeId,
-} from '@tldraw/tlschema'
+} from '@abc.xyz/tlschema'
 import {
 	JsonObject,
 	annotateError,
@@ -50,7 +50,7 @@ import {
 	hasOwnProperty,
 	sortById,
 	structuredClone,
-} from '@tldraw/utils'
+} from '@abc.xyz/utils'
 import { EventEmitter } from 'eventemitter3'
 import { TLUser, createTLUser } from '../config/createTLUser'
 import { checkShapesAndAddCore } from '../config/defaultShapes'
@@ -7276,7 +7276,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 	}
 
 	/**
-	 * Set the value of a {@link @tldraw/tlschema#StyleProp} for the selected shapes.
+	 * Set the value of a {@link @abc.xyz/tlschema#StyleProp} for the selected shapes.
 	 *
 	 * @example
 	 * ```ts
@@ -7308,7 +7308,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 	}
 
 	/**
-	 * Set the value of a {@link @tldraw/tlschema#StyleProp}. This change will be applied to the currently selected shapes.
+	 * Set the value of a {@link @abc.xyz/tlschema#StyleProp}. This change will be applied to the currently selected shapes.
 	 *
 	 * @example
 	 * ```ts

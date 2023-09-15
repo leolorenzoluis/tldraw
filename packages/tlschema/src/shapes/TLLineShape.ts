@@ -1,5 +1,5 @@
-import { defineMigrations } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import { defineMigrations } from '@abc.xyz/store'
+import { T } from '@abc.xyz/validate'
 import { handleValidator } from '../misc/TLHandle'
 import { StyleProp } from '../styles/StyleProp'
 import { DefaultColorStyle } from '../styles/TLColorStyle'

@@ -23,7 +23,7 @@ import {
 	geoShapeProps,
 	getDefaultColorTheme,
 	getPolygonVertices,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 
 import { HyperlinkButton } from '../shared/HyperlinkButton'
 import { TextLabel } from '../shared/TextLabel'

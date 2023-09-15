@@ -1,4 +1,4 @@
-import { computed } from '@tldraw/state'
+import { computed } from '@abc.xyz/state'
 import { TLUserPreferences } from '../../config/TLUserPreferences'
 import { TLUser } from '../../config/createTLUser'
 

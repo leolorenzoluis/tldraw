@@ -6,7 +6,7 @@ import {
 	getPointOnCircle,
 	rng,
 	shortAngleDist,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 
 function getPillCircumference(width: number, height: number) {
 	const radius = Math.min(width, height) / 2

@@ -18,7 +18,7 @@ import {
 	minBy,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import React, { useCallback } from 'react'
 import { useTranslation } from '../../hooks/useTranslation/useTranslation'
 import { Button } from '../primitives/Button'

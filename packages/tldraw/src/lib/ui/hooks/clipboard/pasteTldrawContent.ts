@@ -1,4 +1,4 @@
-import { Editor, TLContent, VecLike } from '@tldraw/editor'
+import { Editor, TLContent, VecLike } from '@abc.xyz/editor'
 
 /**
  * When the clipboard has tldraw content, paste it into the scene.

@@ -1,4 +1,4 @@
-import { EMBED_DEFINITIONS, EmbedDefinition, track, useEditor } from '@tldraw/editor'
+import { EMBED_DEFINITIONS, EmbedDefinition, track, useEditor } from '@abc.xyz/editor'
 import { useRef, useState } from 'react'
 import { TLEmbedResult, getEmbedInfo } from '../../utils/embeds'
 import { useAssetUrls } from '../hooks/useAssetUrls'

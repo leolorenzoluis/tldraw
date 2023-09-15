@@ -5,7 +5,7 @@ import {
 	exhaustiveSwitchError,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { TLUiActionItem } from './useActions'
 import { TLUiToolItem } from './useTools'
 import { TLUiTranslationKey } from './useTranslation/TLUiTranslationKey'

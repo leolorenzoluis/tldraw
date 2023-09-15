@@ -1,4 +1,4 @@
-import { EASINGS } from '@tldraw/editor'
+import { EASINGS } from '@abc.xyz/editor'
 import { StrokeOptions, StrokePoint } from './types'
 
 const { min } = Math

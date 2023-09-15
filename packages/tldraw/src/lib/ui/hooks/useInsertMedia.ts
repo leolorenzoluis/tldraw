@@ -1,4 +1,4 @@
-import { useEditor } from '@tldraw/editor'
+import { useEditor } from '@abc.xyz/editor'
 import { useCallback, useEffect, useRef } from 'react'
 
 export function useInsertMedia() {

@@ -5,7 +5,7 @@ import {
 	TLLineShape,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 
 export function useOnlyFlippableShape() {
 	const editor = useEditor()

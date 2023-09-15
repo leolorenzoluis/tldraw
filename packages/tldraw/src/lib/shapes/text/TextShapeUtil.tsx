@@ -18,7 +18,7 @@ import {
 	textShapeProps,
 	toDomPrecision,
 	useValue,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 import { createTextSvgElementFromSpans } from '../shared/createTextSvgElementFromSpans'
 import { FONT_FAMILIES, FONT_SIZES, TEXT_PROPS } from '../shared/default-shape-constants'
 import { getFontDefForExport } from '../shared/defaultStyleDefs'

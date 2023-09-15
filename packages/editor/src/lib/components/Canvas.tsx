@@ -1,6 +1,6 @@
-import { react, track, useQuickReactor, useValue } from '@tldraw/state'
-import { TLHandle, TLShapeId } from '@tldraw/tlschema'
-import { dedupe, modulate, objectMapValues } from '@tldraw/utils'
+import { react, track, useQuickReactor, useValue } from '@abc.xyz/state'
+import { TLHandle, TLShapeId } from '@abc.xyz/tlschema'
+import { dedupe, modulate, objectMapValues } from '@abc.xyz/utils'
 import classNames from 'classnames'
 import React from 'react'
 import { useCanvasEvents } from '../hooks/useCanvasEvents'
@@ -52,9 +52,9 @@ export const Canvas = track(function Canvas({ className }: { className?: string 
 			const offset =
 				z >= 1 ? modulate(z, [1, 8], [0.125, 0.5], true) : modulate(z, [0.1, 1], [-2, 0.125], true)
 
-			const transform = `scale(${toDomPrecision(z)}) translate(${toDomPrecision(
+			const transform = `scale(${toDomPrecision(z)}) translate3d(${toDomPrecision(
 				x + offset
-			)}px,${toDomPrecision(y + offset)}px)`
+			)}px,${toDomPrecision(y + offset)}px, 0px)`
 			htmlElm.style.setProperty('transform', transform)
 			htmlElm2.style.setProperty('transform', transform)
 		},

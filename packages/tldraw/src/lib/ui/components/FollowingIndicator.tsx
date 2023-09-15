@@ -1,4 +1,4 @@
-import { useEditor, usePresence, useValue } from '@tldraw/editor'
+import { useEditor, usePresence, useValue } from '@abc.xyz/editor'
 
 export function FollowingIndicator() {
 	const editor = useEditor()

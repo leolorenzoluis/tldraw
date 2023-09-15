@@ -1,6 +1,6 @@
-import { SerializedStore, Store, StoreSnapshot } from '@tldraw/store'
-import { TLRecord, TLStore } from '@tldraw/tlschema'
-import { Required, annotateError } from '@tldraw/utils'
+import { SerializedStore, Store, StoreSnapshot } from '@abc.xyz/store'
+import { TLRecord, TLStore } from '@abc.xyz/tlschema'
+import { Required, annotateError } from '@abc.xyz/utils'
 import React, {
 	memo,
 	useCallback,
@@ -37,7 +37,7 @@ import { useZoomCss } from './hooks/useZoomCss'
 import { TLStoreWithStatus } from './utils/sync/StoreWithStatus'
 
 /**
- * Props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawEditor} components.
+ * Props for the {@link @abc.xyz/tldraw#Tldraw} and {@link TldrawEditor} components.
  *
  * @public
  **/
@@ -57,7 +57,7 @@ export type TldrawEditorProps = TldrawEditorBaseProps &
 	)
 
 /**
- * Base props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawEditor} components.
+ * Base props for the {@link @abc.xyz/tldraw#Tldraw} and {@link TldrawEditor} components.
  *
  * @public
  */
@@ -143,9 +143,9 @@ export const TldrawEditor = memo(function TldrawEditor({
 	const ErrorFallback =
 		components?.ErrorFallback === undefined ? DefaultErrorFallback : components?.ErrorFallback
 
-	// apply defaults. if you're using the bare @tldraw/editor package, we
+	// apply defaults. if you're using the bare @abc.xyz/editor package, we
 	// default these to the "tldraw zero" configuration. We have different
-	// defaults applied in @tldraw/tldraw.
+	// defaults applied in @abc.xyz/tldraw.
 	const withDefaults = {
 		...rest,
 		shapeUtils: rest.shapeUtils ?? EMPTY_SHAPE_UTILS_ARRAY,

@@ -1,5 +1,5 @@
-import { StoreSnapshot } from '@tldraw/store'
-import { TLRecord } from '@tldraw/tlschema'
+import { StoreSnapshot } from '@abc.xyz/store'
+import { TLRecord } from '@abc.xyz/tlschema'
 import { useEffect, useState } from 'react'
 import { TLStoreOptions } from '../config/createTLStore'
 import { TLStoreWithStatus } from '../utils/sync/StoreWithStatus'

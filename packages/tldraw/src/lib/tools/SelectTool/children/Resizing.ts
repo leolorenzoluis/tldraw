@@ -16,7 +16,7 @@ import {
 	Vec2d,
 	VecLike,
 	areAnglesCompatible,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 
 type ResizingInfo = TLPointerEventInfo & {
 	target: 'selection'

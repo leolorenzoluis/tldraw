@@ -1,4 +1,4 @@
-import { T } from '@tldraw/validate'
+import { T } from '@abc.xyz/validate'
 
 /** @public */
 export type TLOpacityType = number

@@ -5,7 +5,7 @@ import {
 	TLResizeMode,
 	Vec2d,
 	Vec2dModel,
-} from '@tldraw/editor'
+} from '@abc.xyz/editor'
 
 /** @public */
 export type ResizeBoxOptions = Partial<{

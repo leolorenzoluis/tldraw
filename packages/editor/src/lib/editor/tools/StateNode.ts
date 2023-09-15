@@ -1,4 +1,4 @@
-import { Atom, Computed, atom, computed } from '@tldraw/state'
+import { Atom, Computed, atom, computed } from '@abc.xyz/state'
 import type { Editor } from '../Editor'
 import {
 	EVENT_NAME_MAP,

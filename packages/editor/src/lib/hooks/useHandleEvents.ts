@@ -1,4 +1,4 @@
-import { TLArrowShape, TLLineShape, TLShapeId } from '@tldraw/tlschema'
+import { TLArrowShape, TLLineShape, TLShapeId } from '@abc.xyz/tlschema'
 import * as React from 'react'
 import { Editor } from '../editor/Editor'
 import { loopToHtmlElement, releasePointerCapture, setPointerCapture } from '../utils/dom'

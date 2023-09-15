@@ -1,4 +1,4 @@
-import { Box2dModel } from '@tldraw/tlschema'
+import { Box2dModel } from '@abc.xyz/tlschema'
 import { Vec2d, VecLike } from './Vec2d'
 import { PI, PI2, toPrecision } from './utils'
 
@@ -462,10 +462,10 @@ export class Box2d {
 		const flipY = scaleY < 0
 
 		/*
-    2. Aspect ratio
-    If the aspect ratio is locked, adjust the corners so that the
-    new box's aspect ratio matches the original aspect ratio.
-    */
+	2. Aspect ratio
+	If the aspect ratio is locked, adjust the corners so that the
+	new box's aspect ratio matches the original aspect ratio.
+	*/
 		if (isAspectRatioLocked) {
 			const aspectRatio = (a1x - a0x) / (a1y - a0y)
 			const bw = Math.abs(b1x - b0x)

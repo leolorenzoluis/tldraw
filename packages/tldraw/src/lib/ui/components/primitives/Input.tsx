@@ -1,4 +1,4 @@
-import { useEditor } from '@tldraw/editor'
+import { useEditor } from '@abc.xyz/editor'
 import classNames from 'classnames'
 import * as React from 'react'
 import { TLUiTranslationKey } from '../../hooks/useTranslation/TLUiTranslationKey'

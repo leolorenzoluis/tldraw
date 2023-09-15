@@ -1,4 +1,4 @@
-import { Group2d, StateNode, TLArrowShape, TLEventHandlers, TLGeoShape } from '@tldraw/editor'
+import { Group2d, StateNode, TLArrowShape, TLEventHandlers, TLGeoShape } from '@abc.xyz/editor'
 import { getHitShapeOnCanvasPointerDown } from '../../selection-logic/getHitShapeOnCanvasPointerDown'
 import { updateHoveredId } from '../../selection-logic/updateHoveredId'
 
